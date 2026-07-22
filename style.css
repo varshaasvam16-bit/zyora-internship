@@ -47,16 +47,20 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    flex-wrap:wrap;
 }
 
 .logo{
     font-size:28px;
 }
 
+
 nav ul{
     display:flex;
     list-style:none;
     gap:30px;
+    flex-wrap:wrap;
+
 }
 
 nav a{
@@ -167,14 +171,15 @@ textarea{
 
 button{
 
-    width:150px;
+    width:100%;
+    max-width:180px;
     padding:12px;
     background:var(--blue);
     color:white;
     border:none;
     border-radius:8px;
     cursor:pointer;
-
+    max-width:none;
 }
 
 button:hover{
@@ -188,13 +193,9 @@ button:hover{
 footer{
 
     background:var(--dark);
-
     color:white;
-
     text-align:center;
-
     padding:20px;
-
     margin-top:40px;
 
 }
