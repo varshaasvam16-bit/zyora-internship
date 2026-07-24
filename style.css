@@ -42,6 +42,37 @@ header h1{
 }
 
 /* Navigation */
+/* Dark Mode */
+
+.dark-mode{
+    background:#1e293b;
+    color:white;
+}
+
+.dark-mode section{
+    background:#334155;
+    color:white;
+}
+
+.dark-mode table{
+    color:white;
+}
+
+.dark-mode input,
+.dark-mode textarea{
+    background:#475569;
+    color:white;
+    border:1px solid white;
+}
+
+.dark-mode footer{
+    background:black;
+}
+
+#formMessage{
+    margin-top:10px;
+    font-weight:bold;
+}
 
 nav{
     display:flex;
@@ -60,6 +91,8 @@ nav ul{
     list-style:none;
     gap:30px;
     flex-wrap:wrap;
+
+    
 
 }
 
