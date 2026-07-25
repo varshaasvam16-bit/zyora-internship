@@ -43,6 +43,7 @@ header h1{
 
 /* Navigation */
 /* Dark Mode */
+/* Dark Mode */
 
 .dark-mode{
     background:#1e293b;
@@ -68,6 +69,12 @@ header h1{
 .dark-mode footer{
     background:black;
 }
+
+#formMessage{
+    margin-top:10px;
+    font-weight:bold;
+}
+
 
 #formMessage{
     margin-top:10px;
@@ -203,6 +210,7 @@ textarea{
 }
 
 button{
+    
 
     width:100%;
     max-width:180px;
@@ -231,4 +239,32 @@ footer{
     padding:20px;
     margin-top:40px;
 
+}
+/* GitHub Section */
+
+#githubProfile{
+    margin-top:20px;
+    padding:20px;
+    border:2px solid #2563eb;
+    border-radius:10px;
+    background:#eef5ff;
+}
+
+#githubProfile img{
+    width:120px;
+    border-radius:50%;
+    margin-bottom:15px;
+}
+
+#githubProfile ul{
+    list-style:none;
+    padding:0;
+}
+
+#githubProfile li{
+    margin:10px 0;
+}
+
+#loadProfile{
+    margin-bottom:20px;
 }

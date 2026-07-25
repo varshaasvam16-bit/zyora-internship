@@ -56,3 +56,68 @@ form.addEventListener("submit", function(e){
     message.textContent="Message sent successfully!";
 
 });
+// GitHub API
+const profileDiv = document.getElementById("githubProfile");
+const loading = document.getElementById("loading");
+const loadBtn = document.getElementById("loadProfile");
+async function loadGitHubProfile(){
+    loading.textContent = "Loading...";
+    profileDiv.innerHTML = "";
+    const response = await fetch(
+    "https://api.github.com/users/varshaasvam16-bit"
+);
+const data = await response.json();
+const profile = {
+
+    Name: data.name,
+
+    Username: data.login,
+
+    Followers: data.followers,
+
+    Following: data.following,
+
+    PublicRepos: data.public_repos,
+
+    Location: data.location
+
+};
+const details = [];
+for (const key in profile) {
+
+    details.push({
+
+        title: key,
+
+        value: profile[key]
+
+    });
+
+}
+let html = `
+    <img src="${data.avatar_url}" alt="Profile Image">
+    <h3>${data.name}</h3>
+    <ul>
+`;
+details.forEach(function(item){
+
+    html += `
+        <li>
+            <strong>${item.title}:</strong> ${item.value}
+        </li>
+    `;
+
+});
+html += `
+    </ul>
+
+    <p>
+        <a href="${data.html_url}" target="_blank">
+            Visit My GitHub Profile
+        </a>
+    </p>
+`;
+profileDiv.innerHTML = html;
+
+loading.textContent = "";
+}

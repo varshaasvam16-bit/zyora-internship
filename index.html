@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,9 +22,9 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <button id="darkModeBtn">🌙 Dark Mode</button>
+                
             </ul>
-        
+                 <button id="darkModeBtn">🌙 Dark Mode</button>
             
         </nav>
     </header>
@@ -78,12 +79,24 @@
                 </tbody>
             </table>
         </section>
+        <section id="github">
+
+    <h2>My GitHub Profile (Live API)</h2>
+
+    <button id="loadProfile">
+        Refresh Profile
+    </button>
+
+    <p id="loading"></p>
+
+    <div id="githubProfile"></div>
+
+</section>
 
         <section id="contact">
             <h2>Contact Me</h2>
 
-            <form>
-
+            <form id="contactForm">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name">
 
@@ -100,7 +113,7 @@
             </form>
         </section>
     </main>
-
+ 
        <footer>
 
         <p> All Rights Reserved.</p>
